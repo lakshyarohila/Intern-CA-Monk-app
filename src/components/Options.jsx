@@ -1,13 +1,13 @@
-// components/Options.jsx
+
 import React from 'react';
 
 function Options({ options, selectedAnswers, onSelectWord }) {
-  // Check if a word is already selected
+
   const isWordSelected = (word) => {
     return selectedAnswers.includes(word);
   };
 
-  // Find the first available blank index
+ 
   const findAvailableBlankIndex = () => {
     for (let i = 0; i < 4; i++) {
       if (!selectedAnswers[i]) {
@@ -17,7 +17,7 @@ function Options({ options, selectedAnswers, onSelectWord }) {
     return null;
   };
 
-  // Handle clicking on a word option
+
   const handleWordClick = (word) => {
     if (isWordSelected(word)) return;
     

@@ -1,8 +1,8 @@
-// components/Question.jsx
+
 import React from 'react';
 
 function Question({ question, selectedAnswers, onUnselectWord }) {
-  // Split the question string by the blank spaces (series of underscores)
+ 
   const parts = question.split(/_{10,}/g);
   
   return (

@@ -1,8 +1,8 @@
-// components/Timer.jsx
+
 import React from 'react';
 
 function Timer({ timeLeft }) {
-  // Calculate colors based on time left
+ 
   const getColorClass = () => {
     if (timeLeft > 15) return 'bg-blue-500';
     if (timeLeft > 5) return 'bg-yellow-500';

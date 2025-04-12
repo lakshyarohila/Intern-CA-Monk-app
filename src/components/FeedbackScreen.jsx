@@ -1,8 +1,8 @@
-// components/FeedbackScreen.jsx
+
 import React from 'react';
 
 function FeedbackScreen({ questions, userAnswers }) {
-  // Check if user answers match correct answers
+ 
   const isCorrect = (questionIndex) => {
     const correctAnswers = questions[questionIndex].correctAnswer;
     const userAns = userAnswers[questionIndex];
@@ -16,7 +16,7 @@ function FeedbackScreen({ questions, userAnswers }) {
     return true;
   };
 
-  // Calculate final score
+
   const calculateScore = () => {
     let score = 0;
     questions.forEach((_, index) => {
